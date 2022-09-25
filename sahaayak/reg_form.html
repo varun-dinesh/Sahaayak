@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+	<script src="https://kit.fontawesome.com/f9f835e742.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">-->
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <!--<link rel="stylesheet" href="assets/socicon/css/styles.css"> -->
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript> -->
+  <!-- <link rel="preload" as="style" href="assets/css/mbr-additional.css"> -->
+  <link rel="stylesheet" href="assets/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+    <style>
+        #error{
+            color: red;
+            font-size- 20px;
+        }
+
+		.login-page {
+		  width: 360px;
+		  padding: 8% 0 0;
+		  margin: auto;
+		}
+		.form {
+		  position: relative;
+		  z-index: 1;
+		  background: #FFFFFF;
+		  max-width: 600px;
+		  margin:auto;
+		  padding: 45px;
+		  text-align: center;
+		  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+		}
+		.form input {
+		  font-family: "Roboto", sans-serif;
+		  outline: 0;
+		  background: #f2f2f2;
+		  width: 100%;
+		  border: 0;
+		  margin: 0 0 15px;
+		  padding: 15px;
+		  box-sizing: border-box;
+		  font-size: 14px;
+		}
+		.form button {
+		  font-family: "Roboto", sans-serif;
+		  text-transform: uppercase;
+		  outline: 0;
+		  background: #4CAF50;
+		  width: 100%;
+		  border: 0;
+		  padding: 15px;
+		  color: #FFFFFF;
+		  font-size: 14px;
+		  -webkit-transition: all 0.3 ease;
+		  transition: all 0.3 ease;
+		  cursor: pointer;
+		}
+		.form button:hover,.form button:active,.form button:focus {
+		  background: #43A047;
+		}
+		.form .message {
+		  margin: 15px 0 0;
+		  color: #b3b3b3;
+		  font-size: 12px;
+		}
+		.form .message a {
+		  color: #4CAF50;
+		  text-decoration: none;
+		}
+		.form .register-form {
+		  display: none;
+		}
+		.container {
+		  position: relative;
+		  z-index: 1;
+		  max-width: 300px;
+		  margin: 0 auto;
+		}
+		.container:before, .container:after {
+		  content: "";
+		  display: block;
+		  clear: both;
+		}
+		.container .info {
+		  margin: 50px auto;
+		  text-align: center;
+		}
+		.container .info h1 {
+		  margin: 0 0 15px;
+		  padding: 0;
+		  font-size: 36px;
+		  font-weight: 300;
+		  color: #1a1a1a;
+		}
+		.container .info span {
+		  color: #4d4d4d;
+		  font-size: 12px;
+		}
+		.container .info span a {
+		  color: #000000;
+		  text-decoration: none;
+		}
+		.container .info span .fa {
+		  color: #EF3B3A;
+		}
+		body {
+		  background: white;    
+		}
+		@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+		:root{
+			--font-ubuntu: 'Ubuntu', monospace;
+			--color-border: #e5e5e5;
+		}
+
+		.font-ubuntu{
+			font: normal 500 16px var(--font-ubuntu);
+		}
+
+		#register, #login-form {
+			padding: 5% 0;
+			<!-- background: url("background.png") no-repeat; -->
+			background-size: cover;
+		}
+
+		#login-form{
+			padding: 10% 0;
+		}
+
+		#register .upload-profile-image{
+			position: relative;
+			width: 10%;
+			margin-left: auto;
+			margin-right: auto;
+			transition: filter .8s ease;
+		}
+
+		#register .upload-profile-image:hover{
+			filter: drop-shadow(1px 1px 22px #7584bb);
+		}
+
+		#upload-profile{
+			position: absolute;
+			top: 0;
+			z-index: 10;
+			width: 200px;
+			margin-top: 0px;
+			opacity: 0;
+		}
+
+		#upload-profile::-webkit-file-upload-button{
+			visibility: hidden;
+		}
+
+		#upload-profile::before{
+			content: ' ';
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			cursor: pointer;
+			border-radius: 50%;
+		}
+
+		#register .upload-profile-image .camera-icon{
+			position: absolute;
+			top: 70px;
+			width: 60px !important;
+			filter: invert(30%) !important;
+		}
+
+		#register .upload-profile-image:hover .camera-icon{
+			filter: invert(100%) !important;
+		}
+
+		#reg-form input[type='text'],
+		#reg-form input[type='email'],
+		#reg-form input[type='password'],
+		#log-form input[type='text'],
+		#log-form input[type='email'],
+		#log-form input[type='password']{
+			border: none;
+			border-radius: unset;
+			border-bottom: 1px solid var(--color-border);
+			font-family: var(--font-ubuntu);
+		}
+
+		#reg-form input[type='text'],
+		#reg-form input[type='email'],
+		#reg-form input[type='password'],
+		#log-form input[type='text'],
+		#log-form input[type='email'],
+		#log-form input[type='password']{
+			outline: none;
+			box-shadow: none;
+		}
+		<!-- /* Dropdown Button */ -->
+		.dropbtn {
+		  background-color: #04AA6D;
+		  color: white;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: none;
+		}
+
+		<!-- /* The container <div> - needed to position the dropdown content */ -->
+		.dropdown {
+		  position: relative;
+		  display: inline-block;
+		}
+
+		<!-- /* Dropdown Content (Hidden by Default) */ -->
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f1f1f1;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		<!-- /* Links inside the dropdown */ -->
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #ddd;}
+
+		.dropdown:hover .dropdown-content {display: block;}
+		.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    </style>
+</head>
+<body style="background-color:#efefef;">
+	<section class="menu menu2 header" once="menu" id="menu2-o">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="#">
+                        <img src="assets/images/beard-153x153.png" alt="SAHAAYAK" style="height: 4.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-5" href="#">SAHAAYAK</a></span>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black display-4" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link link text-black display-4" href="#">About Us</a>
+                    </li></ul>               
+            </div>
+        </div>
+    </nav>
+</section>
+	<div class="d-flex justify-content-center">
+		<div class="form" style="margin-top:7.5%;width:40%;margin-bottom:10%;">
+			<center><form  id="reg-form" class="register-form" action="insert1.php" method="POST"style="width:80%;">
+			  <b><strong><h1>Helper Registration</h1></strong></b>
+			  <div class="upload-profile-image d-flex justify-content-center pb-5" style="margin-top:5%;margin-bottom:-2%;">
+                <div class="text-center">
+                    <img src='beard.png' style="width: 200px; height: 200px" class="img rounded-circle" alt="profile">
+					<small class="form-text text-black-50">Choose Image</small>
+                        <input type="file" form="reg-form" class="form-control-file" name="profileUpload" id="upload-profile">
+                </div>
+            </div>
+			  <input type="text" placeholder="USERNAME" name="username" required  style="margin-top:2%;">
+			  <input id="e2" type="email" placeholder="E-MAIL" name="email" required>
+			  <input id="loge13" type="password" placeholder="PASSWORD" name="password" required>
+			  <input id="loge12" type="password" placeholder="CONFIRM PASSWORD" required>
+			 <input type="phone" placeholder="PHONE-NO" name="phone" required>
+			 <input type="submit" value="Submit" name="submit"style="background-color:#00FF7F;font-size:1em;margin-top:2%;">
+			  <p class="message" style="font-size:1.15em;">Already registered? <a href="#" onMouseOver="this.style.color='#009688'" onMouseOut="this.style.color='#4CAF50'">Sign In</a></p>
+			</form></center>
+			<center><form class="login-form" action="insert2.php" method="POST" style="width:80%;">
+			  <b><strong><h1>Helper Log-In</h1></strong></b>
+			  <div class="upload-profile-image d-flex justify-content-center pb-5" style="margin-top:5%;margin-bottom:-2%;">
+                <div class="text-center">
+                    <img src='beard.png' style="width: 200px; height: 200px" class="img rounded-circle" alt="profile">
+                </div>
+            </div>
+			  <input type="text" placeholder="USERNAME" name="username" required  style="margin-top:2%;">
+			  <input type="password" placeholder="PASSWORD" name="password" required>
+			  <input type="submit" value="Submit" name="submit" style="background-color:#00FF7F;font-size:1em;">
+			  <p class="message" style="font-size:1.15em;">Forgot Password <a href="forgot.html" onMouseOver="this.style.color='#009688'" onMouseOut="this.style.color='#4CAF50'">Click Here</a></p>
+			  <p class="message" style="font-size:1.15em;">Not registered? <a href="#" onMouseOver="this.style.color='#009688'" onMouseOut="this.style.color='#4CAF50'">Create an account</a></p>
+			</form></center>
+		</div>
+	</div>
+	
+	<section id="footer">
+        <img src="footer-img.png" class="footer-img">
+        <div class="title-text">
+            <p>CONTACT</p>
+            <h1>Visit Us Today</h1>
+        </div>
+        <div class="footer-row">
+            <div class="footer-left">
+                <h1>Active Hours</h1>
+                <p><i class="fa fa-clock-o"></i>Monday To Friday -9am to 9pm</p>
+                <p><i class="fa fa-clock-o"></i>Saturday and Sunday 8am to 11pm</p>
+            </div>
+            <div class="footer-right">
+                <h1>Get In Touch</h1>
+                <p>#30 abc Colony,xyz City IN<i class="fa fa-map-marker"></i></p>
+                <p>sahaayak@gmail.com<i class="fa fa-paper-plane"></i></p>
+                <p>+91 9916524828<i class="fa fa-phone"></i></p>
+            
+            </div>
+        </div>
+        <div class="social-links">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"> </i>
+            <i class="fa fa-youtube-play"></i>
+            <p>Copyright &copy; Team Sahayaak</p>
+        </div>
+    </section>
+            
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="main.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+</script>
+</body>
+</html>

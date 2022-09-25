@@ -1,0 +1,495 @@
+@font-face {
+  font-family: 'Moririse2';
+  font-display: swap;
+  src:  url('se2.eot?f2bix4');
+  src:  url('se2.eot?f2bix4#iefix') format('embedded-opentype'),
+    url('se2.ttf?f2bix4') format('truetype'),
+    url('se2.woff?f2bix4') format('woff'),
+    url('se2.svg?f2bix4#se2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ib-"], [class*=" ib-"] {
+  font-family: 'Moririse2' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ib-mbri-add-sumbrenu:before {
+  content: "\e900";
+}
+.ib-mbri-alert:before {
+  content: "\e901";
+}
+.ib-mbri-align-center:before {
+  content: "\e902";
+}
+.ib-mbri-align-justify:before {
+  content: "\e903";
+}
+.ib-mbri-align-left:before {
+  content: "\e904";
+}
+.ib-mbri-align-right:before {
+  content: "\e905";
+}
+.ib-mbri-android:before {
+  content: "\e906";
+}
+.ib-mbri-apple:before {
+  content: "\e907";
+}
+.ib-mbri-arrow-down:before {
+  content: "\e908";
+}
+.ib-mbri-arrow-next:before {
+  content: "\e909";
+}
+.ib-mbri-arrow-prev:before {
+  content: "\e90a";
+}
+.ib-mbri-arrow-up:before {
+  content: "\e90b";
+}
+.ib-mbri-bold:before {
+  content: "\e90c";
+}
+.ib-mbri-bookmark:before {
+  content: "\e90d";
+}
+.ib-mbri-bootstrap:before {
+  content: "\e90e";
+}
+.ib-mbri-briefcase:before {
+  content: "\e90f";
+}
+.ib-mbri-browse:before {
+  content: "\e910";
+}
+.ib-mbri-bulleted-list:before {
+  content: "\e911";
+}
+.ib-mbri-calendar:before {
+  content: "\e912";
+}
+.ib-mbri-camera:before {
+  content: "\e913";
+}
+.ib-mbri-cart-add:before {
+  content: "\e914";
+}
+.ib-mbri-cart-full:before {
+  content: "\e915";
+}
+.ib-mbri-cash:before {
+  content: "\e916";
+}
+.ib-mbri-change-style:before {
+  content: "\e917";
+}
+.ib-mbri-chat:before {
+  content: "\e918";
+}
+.ib-mbri-clock:before {
+  content: "\e919";
+}
+.ib-mbri-close:before {
+  content: "\e91a";
+}
+.ib-mbri-cloud:before {
+  content: "\e91b";
+}
+.ib-mbri-code:before {
+  content: "\e91c";
+}
+.ib-mbri-contact-form:before {
+  content: "\e91d";
+}
+.ib-mbri-credit-card:before {
+  content: "\e91e";
+}
+.ib-mbri-cursor-click:before {
+  content: "\e91f";
+}
+.ib-mbri-cust-feedback:before {
+  content: "\e920";
+}
+.ib-mbri-database:before {
+  content: "\e921";
+}
+.ib-mbri-delivery:before {
+  content: "\e922";
+}
+.ib-mbri-desktop:before {
+  content: "\e923";
+}
+.ib-mbri-devices:before {
+  content: "\e924";
+}
+.ib-mbri-down:before {
+  content: "\e925";
+}
+.ib-mbri-download-2:before {
+  content: "\e926";
+}
+.ib-mbri-download:before {
+  content: "\e927";
+}
+.ib-mbri-drag-n-drop-2:before {
+  content: "\e928";
+}
+.ib-mbri-drag-n-drop:before {
+  content: "\e929";
+}
+.ib-mbri-edit-2:before {
+  content: "\e92a";
+}
+.ib-mbri-edit:before {
+  content: "\e92b";
+}
+.ib-mbri-error:before {
+  content: "\e92c";
+}
+.ib-mbri-extension:before {
+  content: "\e92d";
+}
+.ib-mbri-features:before {
+  content: "\e92e";
+}
+.ib-mbri-file:before {
+  content: "\e92f";
+}
+.ib-mbri-flag:before {
+  content: "\e930";
+}
+.ib-mbri-folder:before {
+  content: "\e931";
+}
+.ib-mbri-gift:before {
+  content: "\e932";
+}
+.ib-mbri-github:before {
+  content: "\e933";
+}
+.ib-mbri-globe-2:before {
+  content: "\e934";
+}
+.ib-mbri-globe:before {
+  content: "\e935";
+}
+.ib-mbri-growing-chart:before {
+  content: "\e936";
+}
+.ib-mbri-hearth:before {
+  content: "\e937";
+}
+.ib-mbri-help:before {
+  content: "\e938";
+}
+.ib-mbri-home:before {
+  content: "\e939";
+}
+.ib-mbri-hot-cup:before {
+  content: "\e93a";
+}
+.ib-mbri-idea:before {
+  content: "\e93b";
+}
+.ib-mbri-image-gallery:before {
+  content: "\e93c";
+}
+.ib-mbri-image-slider:before {
+  content: "\e93d";
+}
+.ib-mbri-info:before {
+  content: "\e93e";
+}
+.ib-mbri-italic:before {
+  content: "\e93f";
+}
+.ib-mbri-key:before {
+  content: "\e940";
+}
+.ib-mbri-laptop:before {
+  content: "\e941";
+}
+.ib-mbri-layers:before {
+  content: "\e942";
+}
+.ib-mbri-left-right:before {
+  content: "\e943";
+}
+.ib-mbri-left:before {
+  content: "\e944";
+}
+.ib-mbri-letter:before {
+  content: "\e945";
+}
+.ib-mbri-like:before {
+  content: "\e946";
+}
+.ib-mbri-link:before {
+  content: "\e947";
+}
+.ib-mbri-lock:before {
+  content: "\e948";
+}
+.ib-mbri-login:before {
+  content: "\e949";
+}
+.ib-mbri-logout:before {
+  content: "\e94a";
+}
+.ib-mbri-magic-stick:before {
+  content: "\e94b";
+}
+.ib-mbri-map-pin:before {
+  content: "\e94c";
+}
+.ib-mbri-menu:before {
+  content: "\e94d";
+}
+.ib-mbri-ible-2:before {
+  content: "\e94e";
+}
+.ib-mbri-ible-horizontal:before {
+  content: "\e94f";
+}
+.ib-mbri-ible:before {
+  content: "\e950";
+}
+.ib-mbri-ibrise:before {
+  content: "\e951";
+}
+.ib-mbri-more-horizontal:before {
+  content: "\e952";
+}
+.ib-mbri-more-vertical:before {
+  content: "\e953";
+}
+.ib-mbri-music:before {
+  content: "\e954";
+}
+.ib-mbri-new-file:before {
+  content: "\e955";
+}
+.ib-mbri-numbered-list:before {
+  content: "\e956";
+}
+.ib-mbri-opened-folder:before {
+  content: "\e957";
+}
+.ib-mbri-pages:before {
+  content: "\e958";
+}
+.ib-mbri-paper-plane:before {
+  content: "\e959";
+}
+.ib-mbri-paperclip:before {
+  content: "\e95a";
+}
+.ib-mbri-phone:before {
+  content: "\e95b";
+}
+.ib-mbri-photo:before {
+  content: "\e95c";
+}
+.ib-mbri-photos:before {
+  content: "\e95d";
+}
+.ib-mbri-pin:before {
+  content: "\e95e";
+}
+.ib-mbri-play:before {
+  content: "\e95f";
+}
+.ib-mbri-plus:before {
+  content: "\e960";
+}
+.ib-mbri-preview:before {
+  content: "\e961";
+}
+.ib-mbri-print:before {
+  content: "\e962";
+}
+.ib-mbri-protect:before {
+  content: "\e963";
+}
+.ib-mbri-question:before {
+  content: "\e964";
+}
+.ib-mbri-quote-left:before {
+  content: "\e965";
+}
+.ib-mbri-quote-right:before {
+  content: "\e966";
+}
+.ib-mbri-redo:before {
+  content: "\e967";
+}
+.ib-mbri-refresh:before {
+  content: "\e968";
+}
+.ib-mbri-responsive-2:before {
+  content: "\e969";
+}
+.ib-mbri-responsive:before {
+  content: "\e96a";
+}
+.ib-mbri-right:before {
+  content: "\e96b";
+}
+.ib-mbri-rocket:before {
+  content: "\e96c";
+}
+.ib-mbri-sad-face:before {
+  content: "\e96d";
+}
+.ib-mbri-sale:before {
+  content: "\e96e";
+}
+.ib-mbri-save:before {
+  content: "\e96f";
+}
+.ib-mbri-search:before {
+  content: "\e970";
+}
+.ib-mbri-setting-2:before {
+  content: "\e971";
+}
+.ib-mbri-setting-3:before {
+  content: "\e972";
+}
+.ib-mbri-setting:before {
+  content: "\e973";
+}
+.ib-mbri-share:before {
+  content: "\e974";
+}
+.ib-mbri-shopping-bag:before {
+  content: "\e975";
+}
+.ib-mbri-shopping-basket:before {
+  content: "\e976";
+}
+.ib-mbri-shopping-cart:before {
+  content: "\e977";
+}
+.ib-mbri-sites:before {
+  content: "\e978";
+}
+.ib-mbri-smile-face:before {
+  content: "\e979";
+}
+.ib-mbri-speed:before {
+  content: "\e97a";
+}
+.ib-mbri-star:before {
+  content: "\e97b";
+}
+.ib-mbri-success:before {
+  content: "\e97c";
+}
+.ib-mbri-sun:before {
+  content: "\e97d";
+}
+.ib-mbri-sun2:before {
+  content: "\e97e";
+}
+.ib-mbri-tablet-vertical:before {
+  content: "\e97f";
+}
+.ib-mbri-tablet:before {
+  content: "\e980";
+}
+.ib-mbri-target:before {
+  content: "\e981";
+}
+.ib-mbri-timer:before {
+  content: "\e982";
+}
+.ib-mbri-to-ftp:before {
+  content: "\e983";
+}
+.ib-mbri-to-local-drive:before {
+  content: "\e984";
+}
+.ib-mbri-touch-swipe:before {
+  content: "\e985";
+}
+.ib-mbri-touch:before {
+  content: "\e986";
+}
+.ib-mbri-trash:before {
+  content: "\e987";
+}
+.ib-mbri-underline:before {
+  content: "\e988";
+}
+.ib-mbri-undo:before {
+  content: "\e989";
+}
+.ib-mbri-unlink:before {
+  content: "\e98a";
+}
+.ib-mbri-unlock:before {
+  content: "\e98b";
+}
+.ib-mbri-up-down:before {
+  content: "\e98c";
+}
+.ib-mbri-up:before {
+  content: "\e98d";
+}
+.ib-mbri-update:before {
+  content: "\e98e";
+}
+.ib-mbri-upload-2:before {
+  content: "\e98f";
+}
+.ib-mbri-upload:before {
+  content: "\e990";
+}
+.ib-mbri-user-2:before {
+  content: "\e991";
+}
+.ib-mbri-user:before {
+  content: "\e992";
+}
+.ib-mbri-users:before {
+  content: "\e993";
+}
+.ib-mbri-video-play:before {
+  content: "\e994";
+}
+.ib-mbri-video:before {
+  content: "\e995";
+}
+.ib-mbri-watch:before {
+  content: "\e996";
+}
+.ib-mbri-website-theme-2:before {
+  content: "\e997";
+}
+.ib-mbri-website-theme:before {
+  content: "\e998";
+}
+.ib-mbri-wifi:before {
+  content: "\e999";
+}
+.ib-mbri-windows:before {
+  content: "\e99a";
+}
+.ib-mbri-zoom-in:before {
+  content: "\e99b";
+}
+.ib-mbri-zoom-out:before {
+  content: "\e99c";
+}

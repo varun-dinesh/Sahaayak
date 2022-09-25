@@ -1,0 +1,796 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*Header Start*/
+.navbar
+{
+	width: 100%;
+	overflow: hidden;
+	height: 70px;
+	line-height: 70px;
+	background: #fff;
+	border-bottom: 2px solid red;
+}
+
+.logo
+{
+	/*width: 70px;*/
+	float: left;
+	height: 80px;
+}
+.container
+{
+	width: 100%;
+	margin-right: auto;
+	margin-bottom: auto;
+}
+
+/*This is for ul tag*/
+
+.menu
+{
+	float: right;
+}
+
+.menu li
+{
+	float: left;
+	width: 120px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	list-style: none;
+}
+
+.menu li a{
+	color: #000;
+	text-decoration: none;
+	font-family: calibri;
+	text-transform: uppercase;
+	display: block;
+	transition: 0.5s all;
+}
+
+.menu li:hover{
+	background: #f39d1a;
+}
+h1
+{
+	text-decoration: none;
+}
+/*Header End*/
+
+
+
+
+/* Left Slide-Show*/
+/*
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+
+	}
+	45%{
+		left: -100%;
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+
+#slider{
+	overflow: hidden;
+
+}
+#slider figure img{
+	width: 20%;
+	float: left;
+}
+#slider figure{
+	position: relative;
+	width:500%;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slider infinite;
+
+}
+
+*/
+
+/* Opacity SlideShow*/
+
+.fig{
+	background-color: #000;
+	margin: 0 auto;
+}
+
+.slideshow{
+	width: 100%;
+	height: 100vh;
+	position: relative; 
+	overflow: hidden;
+}
+.slideshow-item{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	opacity: 0;
+	animation: sld 101s infinite;
+
+}
+
+.slideshow-item:nth-child(1),
+.slideshow-item:nth-child(1) img{
+	animation-delay: 0s;
+}
+.slideshow-item:nth-child(2),
+.slideshow-item:nth-child(2) img{
+	animation-delay: 10s;
+}
+.slideshow-item:nth-child(3),
+.slideshow-item:nth-child(3) img{
+	animation-delay: 20s;
+}
+.slideshow-item:nth-child(4),
+.slideshow-item:nth-child(4) img{
+	
+	animation-delay: 30s;
+}
+.slideshow-item:nth-child(5),
+.slideshow-item:nth-child(5) img
+{
+	animation-delay: 40s;
+}
+
+
+.slideshow-item img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	animation: zoom 101s infinite;
+}
+
+.slideshow-item-text{
+	max-width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	background-color: rgba(0,0,0,0.4);
+	color: #fff;
+	padding: 1rem 5rem;
+}
+
+.slideshow-item-text h5{
+	font-size: 5rem;
+	font-family: "Bad Script",sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin-bottom: 2.5rem;
+}
+
+.slideshow-item-text p{
+	font-size: 1.6rem;
+	font-family: "Amita",sans-serif;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+@keyframes sld{
+
+	15%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0;
+	}
+}
+
+@keyframes zoom{
+	100%{
+		transform: scale(3.5);
+	}
+}
+
+/*AAKRUTI PAGE*/
+
+
+.contain
+{
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px 0 0 0;
+}
+.contain h2{
+	text-align: center;
+	font-family: "Salsa";
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	letter-spacing: 3px;
+	font-size: 50px;
+	font-weight: 50;
+	color: rgb(84, 199, 84)
+}
+
+.contain h3{
+	font-family: "Salsa";
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	letter-spacing: 3px;
+	line-height: 2px;
+	font-size: 30px;
+	color: rgb(0,0,0);
+	font-weight: 50;
+}
+
+#one{
+	padding-bottom: 15px;
+	font-size: 20px;
+	font-family: "Adamina";
+	font-weight: 100;
+	letter-spacing: 2px;
+}
+#two{
+	padding-bottom: 15px;
+	font-size: 22px;
+	font-family: "Adamina";
+	font-weight: 100;
+	letter-spacing: 2px;
+}
+
+.list{
+	list-style: none;
+	letter-spacing: 2px;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+.list li{
+	padding-bottom: 10px;
+}
+
+
+.fa{
+	color: rgb(29, 238, 29);
+	padding-right: 5px;
+}
+
+.end p{
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+
+.btn{
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #30c39e;
+	padding-top: 10px;
+}
+
+.btn-alt{
+	border: 2px solid #30c39e;
+	padding: 10px 30px;
+}
+.btn-alt:hover{
+	background: #fff;
+	color: #30c39e;
+}
+
+.image{
+	float: right;
+
+}
+
+.slider{
+	overflow: hidden;
+	width:540px;
+	height: 426px
+}
+.slider figure div{
+	float: right;
+	width: 20%;
+}
+
+.slider figure img{
+	width: 100%;
+	float: right;
+}
+
+
+.slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0px;
+	animation: 30s hari infinite;
+}
+
+@keyframes hari{
+	0%{
+		left: 0%;
+
+	}
+
+	10%{
+		left: 0%;
+	}
+
+	12%{
+		left: -100%;
+	}
+
+	22%{
+		left: -100%;
+	}
+
+	24%{
+		left: -200%;
+	}
+
+	34%{
+		left: -200%;
+	}
+	36%{
+		left: -300%;
+	}
+
+	46%{
+		left: -300%;
+	}
+	
+	48%{
+		left: -400%;
+	}
+
+	58%{
+		left: -400%;
+	}
+	60%{
+		left: -300%;
+	}
+	70%{
+		left: -300%;
+	}
+	72%{
+		left: -200%;
+	}
+
+	82%{
+		left: -200%;
+
+	}
+	84%{
+		left: -100%;
+	}
+	94%{
+		left: -100%;
+	}
+	96%{
+		left: 0%;
+	}
+}
+
+/*END OF AAKRUTI*/
+
+
+
+/*How We Work*/
+.con{
+	display: flex;
+	padding-bottom: 90px;
+	padding-top: 20px;
+	margin-top: 50px;
+	width: 100%;
+
+}
+
+.item{
+	flex: 1;
+	padding: 1em;
+	margin: .6em;
+	background-color: #fff;
+	text-align: center;
+	opacity: 0.7;
+}
+
+
+.item i
+{
+	font-size: 4em;
+	color: #dc3545;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+	background: rgb(172, 164, 164);
+	border-radius: 100%;
+	width: 120px;
+	height: 120px;
+	line-height: 120px;
+}
+
+.item h2{
+	font-family: "Adamina" ;
+	padding-bottom: 10px;
+	font-family: "Architects Daughter";
+	font-size: 30px;
+}
+
+.item p{
+	letter-spacing: 2px;
+	font-size: 20px;
+	font-family: "Bad Script";
+	font-weight: 500px;
+}
+
+.con h1{
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 100px;
+	display: block;
+}
+
+.part-three{
+	background-image: url(b1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.part-three h1{
+	padding-top: 50px;
+	font-size: 80px;
+	color: honeydew;
+	padding-bottom: 20px;
+	font-weight: 50;
+}
+
+/*End Of How We Work*/
+
+/*Our Gallery*/
+.fourth h1{
+	text-align: center;
+	color: forestgreen;
+	margin: 50px 0 50px;
+	font-size: 70px;
+	font-family: "BioRhyme Expanded";
+}
+
+.fourth{
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px 30px;
+}
+
+.gallery{
+	margin: 10px 50px;
+	padding-left: 100px;
+}
+
+.gallery img{
+	width: 250px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.gallery img:hover{
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+
+/*End Of Our Gallery*/
+
+
+
+footer{
+	position: relative;
+	bottom: 0;
+	}
+	
+	@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:50 px; }
+	}
+	
+	
+	.footer-distributed{
+	background-color: #006622;
+	box-sizing: border-box;
+	width: 100%;
+	height: 300px;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+	}
+	
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+	}
+	
+	/* Footer left */
+	
+	.footer-distributed .footer-left{
+	width: 30%;
+	}
+	
+	.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+	}
+	
+	/* The company logo */
+	
+	.footer-distributed .footer-left img{
+	width: 30%;
+	}
+	
+	.footer-distributed h3 span{
+	color:  #e0ac1c;
+	}
+	
+	/* Footer links */
+	
+	.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	}
+	
+	.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+	}
+	
+	.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+	}
+	
+	/* Footer Center */
+
+	/*Subhas Footer
+	
+	.footer-distributed .footer-center{
+	width: 35%;
+	}
+	
+	
+	.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+	}
+	
+	.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+	}
+	
+	.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+	}
+	
+	.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+	}
+	
+	.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+	}
+	
+	
+	/* Footer Right 
+	
+	.footer-distributed .footer-right{
+	width: 30%;
+	}
+	
+	.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+	}
+	
+	.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	}
+	
+	.footer-distributed .footer-icons{
+	margin-top: 25px;
+	}
+	
+	.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+	
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	
+	margin-right: 3px;
+	margin-bottom: 5px;
+	}
+	
+	/* Here is the code for Responsive Footer */
+	/* You can remove below code if you don't want Footer to be responsive 
+	
+	
+	@media (max-width: 880px) {
+	
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: center;
+	}
+	
+	.footer-distributed .footer-center i{
+	margin-left: 0;
+	}
+
+	.footer-icons a:hover{
+		color: crimson;
+	}*/
+
+	.footer{
+
+        background: #000;
+        color: #8a8a8a;
+        font-size: 17px;
+        padding: 60px 0 20px;
+    }
+
+    .footer p{
+        color: #8a8a8a;
+
+    }
+    .footer h3{
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3,
+    .footer-col-4
+    {
+        min-width: 250px;
+        margin-bottom: 20px;
+
+    }
+
+    .footer-col-1{
+        flex-basis: 30%;
+    }
+    .footer-col-2{
+        flex: 1;
+        text-align: center;
+    }
+    .footer-col-3{
+        width: 180px;
+        margin-bottom: 20px;
+    }
+    .footer-col-4{
+        flex-basis: 30%;
+    }
+
+    .footer-col-3,
+    .footer-col-4{
+        flex-basis: 12%;
+        text-align: center;
+    }
+
+    ul{
+        list-style-type: none;   
+    }
+
+    .app-logo{
+        margin: 20px;
+
+    }
+    .app-logo img{
+        width: 140px;
+    }
+
+    .footer hr{
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+    }
+    .copyright{
+        text-align: center;
+    }
+
+.container
+{
+	/*width: 100%;*/
+	margin-right: auto;
+	margin-bottom: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+}
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
